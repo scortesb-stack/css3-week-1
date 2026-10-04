@@ -1,0 +1,114 @@
+/* Tarea 2: Selectores avanzados y visualización */
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+/* Paso 2: enlace "Saltar al contenido principal".
+   Queda oculto fuera de la pantalla y aparece al navegar con Tab */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background-color: #1e3a5f;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+header {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Paso 4: nav con inline-block y ancho de aproximadamente 80% */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #2c5282;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Paso 5: selector descendente, solo la imagen dentro del nav */
+nav img {
+  width: 10%;
+}
+
+main {
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/* Paso 3: estilo anterior del li comentado
+li {
+  display: inline-block;
+  width: 150px;
+}
+*/
+
+h1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Pasos 6 y 8: clase grid con dos columnas de aproximadamente 40% */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Paso 7: selector descendente, solo las imágenes de la clase grid */
+.grid img {
+  width: 100%;
+}
+
+/* Paso 9: clase flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
